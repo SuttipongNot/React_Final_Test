@@ -5,7 +5,8 @@ import Mainpage from './components/Mainpage';
 import Next1 from './components/Next1';
 import NextFace from './components/NextFace';
 import NextAge from './components/NextAge';
-import SigninAdmin from './components/SigninAdmin';
+import Dashboard from './components/Dashboard';
+import SignInAdmin from './components/SigninAdmin';
 
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 
@@ -32,10 +33,11 @@ export default function App() {
         <Routes>
           <Route path="/" element={<Navigate to="/mainpage" />} /> 
           <Route exact path='/mainpage' element={<Mainpage />} />
-          <Route exact path='/Next1' element={<Next1/>}/>
-          <Route exact path='/NextFace' element={<NextFace/>}/>
-          <Route exact path='/NextAge' element={<NextAge/>}/>
-          <Route exact path='/SigninAdmin' element={<SigninAdmin/>}/>
+          <Route exact path='/next1' element={<Next1/>}/>
+          <Route exact path='/nextface' element={<NextFace/>}/>
+          <Route exact path='/nextage' element={<NextAge/>}/>
+          <Route exact path='/signinadmin' element={<SignInAdmin/>}/>
+          <Route exact path='/dashboard' element={<Dashboard/>}/>
         </Routes>
       </Router>
     </ThemeProvider>

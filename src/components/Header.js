@@ -1,13 +1,12 @@
 import React from 'react';
 import { AppBar, Toolbar, Button, Box } from '@mui/material';
-import { useNavigate } from 'react-router-dom'; 
-import logo from './image/logoweb.png'; 
+import { useNavigate } from 'react-router-dom';
 
 export default function Header() {
   const navigate = useNavigate(); 
 
   const handleSignInClick = () => {
-    navigate('/SigninAdmin'); 
+    navigate('/signinadmin'); 
   };
 
   const handleHomeClick = () => {
@@ -26,8 +25,6 @@ export default function Header() {
         <Toolbar>
           <Box
             component="img"
-            src={logo}
-            alt="Logo"
             onClick={handleHomeClick} 
             sx={{
               height: 100, 
